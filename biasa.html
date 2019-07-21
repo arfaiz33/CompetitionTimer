@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Timer</title>
+    <link rel="stylesheet" href="timer.css"/>
+    <script src="config.js"></script>
+  </head>
+  <body>
+    <div id="title">
+      <center><h1>
+        OLIMPIADE MAHASISWA<br/>_
+      </h1></center>
+      <hr/>
+    </div>
+    <div id="_timer">
+      00:00
+    </div>
+    <div id="bota">
+      <center>
+        <input type="number" id="timm" placeholder="Time"/>
+        <button id="set" onclick="setTimer()">Set</button>
+        <button id="str" onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Stop</button>
+        <button onclick="resetTimer()">Reset</button>
+      </center>
+    </div>
+    <audio id="alarm2" src="alarm2.mp3" hidden></audio>
+    <script src="final.js"></script>
+    <script>
+      document.body.style.backgroundImage = background_image;
+      document.body.style.backgroundSize = bg_size;
+    </script>
+  </body>
+
+</html>
